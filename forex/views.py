@@ -17,7 +17,7 @@ from selenium.webdriver.common.by import By
 from django.contrib.auth.decorators import login_required
 
 def home_view(request):
-    return render(request, 'hp.html')
+    return render(request, 'home.html')
 
 
 def login_user(request):
