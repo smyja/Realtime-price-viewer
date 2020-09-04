@@ -1,0 +1,330 @@
+body {
+    background: #DDE2E5;
+    font-family: sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    outline: 1px solid white;
+}
+
+.activeButton {
+    color: #455A64;
+    background: white;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.iconColor {
+    color: grey;
+    ;
+}
+
+.nonActiveButton {
+    color: white;
+    background: #455A64;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.searchBox {
+    width: 78%;
+    height: 30px;
+    border: 1px solid #DDE2E5;
+    color: #DDE2E5;
+    font-size: 14px;
+    padding-left: 8px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.fa-bars {
+    font-size: 19px;
+}
+
+p {
+    color: #455A64;
+    font-size: 14px;
+    padding-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin: 0;
+
+}
+
+.col-border-right {
+    border-right: 1px solid lightgrey;
+}
+
+.boder-bottom {
+    border-bottom: 1px solid lightgrey;
+}
+
+.greenSpan {
+    color: #00b276;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.graySpan {
+    font-size: 11px;
+    margin-left: 6px;
+}
+
+.redBox {
+    background: #E53935;
+    color: white;
+    width: 100%;
+    height: 65px;
+}
+
+.greenBox {
+    background: #00b276;
+    color: white;
+    width: 100%;
+    height: 65px;
+}
+
+.boxUpperText {
+    color: white;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.boxLowerText {
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.grayBox {
+    background: #ebebeb;
+    color: black;
+    width: 100%;
+    height: 65px;
+    padding-top: 22px;
+}
+
+.boxMiddleText {
+    color: black;
+    font-weight: 500;
+}
+
+.redBtn {
+    background: white;
+    color: #E53935;
+    border: 1px solid #E53935;
+}
+
+.greenBtn {
+    background: white;
+    color: #00b276;
+    border: 1px solid #00b276;
+}
+
+.redText {
+    color: #E53935;
+}
+
+.progress .progress-bar {
+    animation-name: animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: .4s;
+}
+
+@keyframes animateBar {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.progress {
+    height: 0.3rem;
+}
+
+.right-progress {
+    transform: rotate(180deg);
+}
+
+.progressPriceRight {
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+    top: -7px;
+}
+
+.progressPriceLeft {
+    position: absolute;
+    font-size: 12px;
+    left: 0;
+    top: -7px;
+    padding-left: 0;
+}
+
+.redProgressBar {
+    background-color: #E53935
+}
+
+.greenProgressBar {
+    background-color: #00b276
+}
+
+td {
+    color: #455A64;
+    font-size: 12px;
+}
+
+th {
+    color: darkgray;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.fa-chevron-down {
+    color: #E53935;
+}
+
+.fa-chevron-up {
+    color: #00b276;
+}
+
+.red-text-color {
+    color: #E53935;
+}
+
+.green-text-color {
+    color: #00b276;
+}
+
+table td {
+    border-top: 0 !important;
+}
+
+.leftHeight {
+    height: 59vh;
+    overflow-y: auto;
+}
+
+.selectStyle {
+    display: inline-block;
+    width: 150px;
+    height: 30px !important;
+    font-size: 13px;
+}
+
+.card {
+    border-radius: 0;
+}
+
+.eurusdStyle {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.smallSelectStyle {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    font-size: 11px;
+    border: 0;
+    font-weight: bold;
+}
+
+select:active,
+select:visited,
+select:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.form-control:active,
+.form-control:visited,
+.form-control:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.smallRedButton {
+    background: #E53935;
+    color: white;
+    font-size: 14px;
+}
+
+.smallGrayButton {
+    background: #ebebeb;
+    color: black;
+    font-size: 14px;
+}
+
+.smallGreenButton {
+    background: #00b276;
+    color: white;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.orangebtn {
+    background-color: #ff9814;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    height: 45px;
+    width: 200px;
+}
+
+.mainSpan{
+    position: relative;
+    margin-right: 10px;
+    width: 100px;
+}
+
+.upperSpan{
+    position: absolute;
+    font-size: 14px;
+    top: -22px;
+    font-weight: bold;
+}
+
+.lowerSpan{
+    position: absolute;
+    font-size: 14px;
+    top: -2px;
+    color: #00b276;
+}
+
+.rightSpan{
+    font-size: 14px;
+    font-weight: 600;
+    color: #455A64;
+}
