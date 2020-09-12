@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Prices</h1>
+    <h2 id="prices">{% for i in prices %}{{i}}{% endfor %}</h2>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    const doAjaxWithDelay = (delay) => {
+        setTimeout(() => {
+            var data = $(this).data()
+            $.ajax({
+                url: "/price",
+                type: "GET",
+                success: function(data) {
+                    document.getElementById('prices').innerHTML = data;
+                    console.log(data)
+                }
+            }).done(() => {
+
+                doAjaxWithDelay(5000)
+
+            })
+        }, delay)
+    }
+
+    doAjaxWithDelay(0)
+</script>
+
+</html>
